@@ -1,0 +1,76 @@
+/* GRUNDINSTÄLLNINGAR */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background-color: #f8f9fa; color: #333; line-height: 1.6; }
+a { color: #1a252f; text-decoration: none; }
+ul { list-style: none; }
+
+/* HEADER & MENY */
+header { background-color: #1a252f; color: white; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; }
+nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+.logo { font-size: 1.5rem; font-weight: bold; color: #e8ce8a; }
+nav ul { display: flex; align-items: center; gap: 1.5rem; }
+nav ul li a { color: white; font-weight: 500; transition: color 0.3s; }
+nav ul li a:hover, nav ul li a.active { color: #e8ce8a; }
+
+/* SPRÅKMENY */
+.lang-dropdown { position: relative; display: flex; align-items: center; }
+.lang-dropdown-btn { color: white; font-weight: 500; display: flex; align-items: center; gap: 5px; cursor: pointer; padding: 15px 0; }
+.lang-dropdown-btn:hover { color: #e8ce8a; }
+.dropdown-menu { display: none; position: absolute; right: 0; top: 100%; background-color: #fff; min-width: 140px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); border-radius: 4px; overflow: hidden; }
+.lang-dropdown:hover .dropdown-menu { display: block; }
+.dropdown-menu li a { color: #1a252f; padding: 12px 16px; display: block; font-size: 0.95rem; }
+.dropdown-menu li a:hover { background-color: #f8f9fa; color: #e8ce8a; }
+
+/* HERO COMPANY */
+.hero-company {
+    background-image: url('Main_picture_Company.jpg');
+    background-size: cover; background-position: center; height: 60vh; min-height: 400px;
+    display: flex; align-items: center; justify-content: center; position: relative;
+}
+.hero-company::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(26, 37, 47, 0.5); }
+.hero-overlay { position: relative; z-index: 1; text-align: center; color: white; padding: 0 20px; }
+.hero-overlay h1 { font-size: 3.5rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+.hero-overlay p { font-size: 1.2rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); max-width: 800px; margin: 0 auto; }
+
+/* FEATURE CARDS (Mörka block bredvid varandra) */
+.features-section { padding: 80px 20px; background: #fff; }
+.features-container { max-width: 1200px; margin: 0 auto; }
+.features-grid { 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    gap: 30px; 
+}
+.feature-card { 
+    flex: 1;
+    background: #2c3e50; /* Mörkgrå bakgrund */
+    padding: 40px 30px; 
+    border-radius: 12px; 
+    text-align: center; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15); 
+    transition: transform 0.3s, background-color 0.3s; 
+}
+.feature-card:hover { 
+    transform: translateY(-10px); 
+    background: #1a252f; /* Blir mörkare vid hovring */
+}
+.feature-card .icon { font-size: 3rem; color: #e8ce8a; margin-bottom: 20px; display: block; }
+.feature-card h3 { color: #e8ce8a; font-size: 1.5rem; margin-bottom: 15px; }
+.feature-card p { font-size: 1rem; color: #ecf0f1; line-height: 1.6; }
+
+/* CALL TO ACTION */
+.cta-section { background-color: #f8f9fa; padding: 80px 20px; text-align: center; max-width: 1000px; margin: 40px auto 80px auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.cta-section h2 { color: #1a252f; font-size: 2.5rem; margin-bottom: 20px; }
+.cta-section p { font-size: 1.15rem; color: #555; max-width: 700px; margin: 0 auto 40px auto; }
+.btn-primary { display: inline-block; background-color: #1a252f; color: white; padding: 15px 35px; border-radius: 8px; font-weight: bold; font-size: 1.1rem; transition: background-color 0.3s, transform 0.2s; }
+.btn-primary:hover { background-color: #e8ce8a; color: #1a252f; transform: translateY(-3px); }
+
+/* MOBILANPASSNING */
+@media (max-width: 900px) {
+    .features-grid {
+        flex-direction: column;
+    }
+}
+
+/* FOOTER */
+footer { text-align: center; padding: 30px 20px; background: #1a252f; color: white; }

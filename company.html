@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Retreats - Dream River Escape</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="company.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Dream River Escape</div>
+            <ul>
+                <li><a href="index.html" data-i18n="nav_villas">Our Villas</a></li>
+                <li><a href="company.html" class="active" data-i18n="nav_company">Corporate</a></li>
+                <li class="lang-dropdown">
+                    <span class="lang-dropdown-btn"><i class="fas fa-globe"></i> <span id="current-lang-text">EN</span> ▾</span>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+                        <li><a href="#" onclick="changeLanguage('sv')">Svenska</a></li>
+                        <li><a href="#" onclick="changeLanguage('nl')">Nederlands</a></li>
+                        <li><a href="#" onclick="changeLanguage('bs')">Bosanski</a></li>
+                        <li><a href="#" onclick="changeLanguage('sr')">Српски</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-company">
+            <div class="hero-overlay">
+                <h1 data-i18n="corp_title">Corporate Retreats & Offsites</h1>
+                <p data-i18n="corp_intro">Elevate your team's productivity and well-being in a stunning, private setting. Dream River Escape offers the perfect environment for executive getaways, strategic planning, team building, and remote work.</p>
+            </div>
+        </div>
+
+        <section class="features-section">
+            <div class="features-container">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-laptop-house icon"></i>
+                        <h3 data-i18n="feat1_title">Inspiring Workspaces</h3>
+                        <p data-i18n="feat1_desc">Equipped with fast, reliable Wi-Fi, smart TVs for presentations, and spacious indoor/outdoor dining areas that double as excellent spaces for workshops and creative meetings.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-users icon"></i>
+                        <h3 data-i18n="feat2_title">Team Building & Relaxation</h3>
+                        <p data-i18n="feat2_desc">After a productive day, teams can bond over a BBQ, relax in the private saltwater pools and saunas, or take out the free bikes and canoes along the Buna river.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-key icon"></i>
+                        <h3 data-i18n="feat3_title">Executive Privacy</h3>
+                        <p data-i18n="feat3_desc">Booking our villas guarantees absolute privacy. Away from crowded hotels, your team can focus fully on strategy and team dynamics in an exclusive, high-end environment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2 data-i18n="cta_title">Tailored Business Solutions</h2>
+            <p data-i18n="cta_desc">Planning a company trip? We offer custom quotes and can accommodate larger groups across both our villas. Reach out to discuss your specific corporate needs.</p>
+            <a href="mailto:sales@dreamriverescape.com" class="btn-primary" data-i18n="cta_btn">Request a Corporate Quote</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Dream River Escape. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const translations = {
+            en: {
+                nav_villas: "Our Villas", nav_company: "Corporate",
+                corp_title: "Corporate Retreats & Offsites",
+                corp_intro: "Elevate your team's productivity and well-being in a stunning, private setting. Dream River Escape offers the perfect environment for executive getaways, strategic planning, team building, and remote work.",
+                feat1_title: "Inspiring Workspaces", feat1_desc: "Equipped with fast, reliable Wi-Fi, smart TVs for presentations, and spacious indoor/outdoor dining areas that double as excellent spaces for workshops and creative meetings.",
+                feat2_title: "Team Building & Relaxation", feat2_desc: "After a productive day, teams can bond over a BBQ, relax in the private saltwater pools and saunas, or take out the free bikes and canoes along the Buna river.",
+                feat3_title: "Executive Privacy", feat3_desc: "Booking our villas guarantees absolute privacy. Away from crowded hotels, your team can focus fully on strategy and team dynamics in an exclusive, high-end environment.",
+                cta_title: "Tailored Business Solutions", cta_desc: "Planning a company trip? We offer custom quotes and can accommodate larger groups across both our villas. Reach out to discuss your specific corporate needs.",
+                cta_btn: "Request a Corporate Quote"
+            },
+            sv: {
+                nav_villas: "Våra Villor", nav_company: "Företag",
+                corp_title: "Företagsresor & Konferenser",
+                corp_intro: "Lyft teamets produktivitet och välmående i en fantastisk, privat miljö. Dream River Escape erbjuder den perfekta platsen för ledningsgruppsmöten, strategisk planering, teambuilding och workations.",
+                feat1_title: "Inspirerande Arbetsytor", feat1_desc: "Utrustat med snabbt och pålitligt Wi-Fi, smart-tv för presentationer och rymliga matplatser både inne och ute.",
+                feat2_title: "Teambuilding & Avkoppling", feat2_desc: "Efter en produktiv dag kan teamet umgås kring grillen, koppla av i privata saltvattenspooler och bastur.",
+                feat3_title: "Exklusiv Avskildhet", feat3_desc: "Att boka våra villor garanterar total integritet. Långt ifrån trånga hotell kan ditt team fokusera fullt ut.",
+                cta_title: "Skräddarsydda Företagslösningar", cta_desc: "Planerar ni en företagsresa? Vi erbjuder anpassade offerter och kan ta emot större grupper.",
+                cta_btn: "Begär en Företagsoffert"
+            },
+            nl: {
+                nav_villas: "Onze Villa's", nav_company: "Zakelijk",
+                corp_title: "Bedrijfsretraites & Offsites",
+                corp_intro: "Verhoog de productiviteit en het welzijn van uw team in een prachtige, privéomgeving.",
+                feat1_title: "Inspirerende Werkplekken", feat1_desc: "Voorzien van snelle, betrouwbare Wi-Fi, smart-tv's voor presentaties en ruime eetruimtes binnen en buiten.",
+                feat2_title: "Teambuilding & Ontspanning", feat2_desc: "Na een productieve dag kan het team een band opbouwen tijdens een BBQ, ontspannen in de privé zoutwaterzwembaden en sauna's.",
+                feat3_title: "Exclusieve Privacy", feat3_desc: "Het boeken van onze villa's garandeert absolute privacy.",
+                cta_title: "Zakelijke Oplossingen op Maat", cta_desc: "Plant u een bedrijfsreis? Wij bieden offertes op maat.",
+                cta_btn: "Vraag een Offerte Aan"
+            },
+            bs: {
+                nav_villas: "Naše Vile", nav_company: "Za Kompanije",
+                corp_title: "Korporativni Odmori i Sastanci",
+                corp_intro: "Povećajte produktivnost i blagostanje vašeg tima u predivnom, privatnom okruženju.",
+                feat1_title: "Inspirativni Radni Prostori", feat1_desc: "Opremljeni brzim, pouzdanim Wi-Fi internetom, pametnim televizorima za prezentacije i prostranim trpezarijama.",
+                feat2_title: "Teambuilding i Opuštanje", feat2_desc: "Nakon produktivnog dana, timovi se mogu družiti uz roštilj, opustiti u privatnim bazenima sa slanom vodom i saunama.",
+                feat3_title: "Ekskluzivna Privatnost", feat3_desc: "Rezervacija naših vila garantuje apsolutnu privatnost.",
+                cta_title: "Prilagođena Poslovna Rješenja", cta_desc: "Planirate putovanje za kompaniju? Nudimo prilagođene ponude i možemo smjestiti veće grupe.",
+                cta_btn: "Zatražite Ponudu za Kompanije"
+            },
+            sr: {
+                nav_villas: "Наше Виле", nav_company: "За Компаније",
+                corp_title: "Корпоративни Одмори и Састанци",
+                corp_intro: "Повећајте продуктивност и благостање вашег тима у предивном, приватном окружењу. Dream River Escape нуди савршено окружење за састанке управе, стратешко планирање, team building и рад на даљину.",
+                feat1_title: "Инспиративни Радни Простори", feat1_desc: "Опремљени брзим, поузданим Wi-Fi интернетом, паметним телевизорима за презентације и пространим трпезаријама (унутра и напољу) које служе као одлични простори за радионице и креативне састанке.",
+                feat2_title: "Team Building и Опуштање", feat2_desc: "Након продуктивног дана, тимови се могу дружити уз роштиљ, опустити у приватним базенима са сланом водом и саунама, или искористити бесплатна бицикла и кануе дуж реке Буне.",
+                feat3_title: "Ексклузивна Приватност", feat3_desc: "Резервација наших вила гарантује апсолутну приватност. Далеко од препуних хотела, ваш тим се може у потпуности фокусирати на стратегију у врхунском, ексклузивном окружењу.",
+                cta_title: "Прилагођена Пословна Решења", cta_desc: "Планирате путовање за компанију? Нудимо прилагођене понуде и можемо сместити веће групе кроз резервацију обе виле. Контактирајте нас како бисмо разговарали о вашим специфичним потребама.",
+                cta_btn: "Затражите Понуду за Компаније"
+            }
+        };
+
+        function changeLanguage(lang) {
+            document.getElementById('current-lang-text').innerText = lang.toUpperCase();
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerText = translations[lang][key];
+                }
+            });
+            localStorage.setItem('selectedLang', lang);
+        }
+
+        window.onload = () => {
+            const savedLang = localStorage.getItem('selectedLang') || 'en';
+            changeLanguage(savedLang);
+        };
+    </script>
+</body>
+</html>

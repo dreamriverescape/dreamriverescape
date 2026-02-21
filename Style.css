@@ -1,0 +1,73 @@
+/* GRUNDINSTÄLLNINGAR */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background-color: #f8f9fa; color: #333; line-height: 1.6; }
+a { color: #1a252f; text-decoration: none; }
+ul { list-style: none; }
+
+/* HEADER & MENY */
+header { background-color: #1a252f; color: white; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; }
+nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+.logo { font-size: 1.5rem; font-weight: bold; color: #e8ce8a; }
+nav ul { display: flex; align-items: center; gap: 1.5rem; }
+nav ul li a { color: white; font-weight: 500; transition: color 0.3s; }
+nav ul li a:hover, nav ul li a.active { color: #e8ce8a; }
+
+/* SPRÅKMENY */
+.lang-dropdown { position: relative; display: flex; align-items: center; }
+.lang-dropdown-btn { color: white; font-weight: 500; display: flex; align-items: center; gap: 5px; cursor: pointer; padding: 15px 0; }
+.lang-dropdown-btn:hover { color: #e8ce8a; }
+.dropdown-menu { display: none; position: absolute; right: 0; top: 100%; background-color: #fff; min-width: 140px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); border-radius: 4px; overflow: hidden; }
+.lang-dropdown:hover .dropdown-menu { display: block; }
+.dropdown-menu li a { color: #1a252f; padding: 12px 16px; display: block; font-size: 0.95rem; }
+.dropdown-menu li a:hover { background-color: #f8f9fa; color: #e8ce8a; }
+
+/* HERO STARTSIDA */
+.hero-home {
+    background-image: url('Main_picture_buna.jpg');
+    background-size: cover; background-position: center; height: 60vh; min-height: 400px;
+    display: flex; align-items: center; justify-content: center; position: relative;
+}
+.hero-home::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(26, 37, 47, 0.4); }
+.hero-overlay { position: relative; z-index: 1; text-align: center; color: white; padding: 0 20px; }
+.hero-overlay h1 { font-size: 3.5rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+.hero-overlay p { font-size: 1.2rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
+
+/* VILLA KORT & BILDER (1 STOR, 2 SMÅ) */
+.villa-container { max-width: 1200px; margin: 60px auto; padding: 0 20px; }
+.villa-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 40px; }
+
+.villa-gallery { padding: 0; display: flex; flex-direction: column; gap: 5px; background: #fff; }
+.villa-gallery .main-img { width: 100%; height: 450px; object-fit: cover; display: block; }
+.villa-thumbnails { display: flex; gap: 5px; }
+.villa-thumbnails img { width: calc(50% - 2.5px); height: 250px; object-fit: cover; display: block; }
+
+.villa-content { padding: 40px; }
+.villa-content h2 { color: #1a252f; font-size: 2rem; margin-bottom: 20px; border-bottom: 2px solid #e8ce8a; display: inline-block; padding-bottom: 5px; }
+.villa-desc { font-size: 1.05rem; color: #555; margin-bottom: 30px; }
+.amenities { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-bottom: 30px; }
+.amenities li { font-size: 0.95rem; color: #444; }
+
+/* KONTAKT I KORTEN */
+.villa-contact { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee; padding-top: 20px; flex-wrap: wrap; gap: 20px; }
+.contact-primary p { margin-bottom: 5px; }
+.contact-primary a { color: #1a252f; font-weight: 500; transition: color 0.3s; }
+.contact-primary a:hover { color: #e8ce8a; }
+.social-links a { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #f0f0f0; border-radius: 50%; color: #1a252f; margin-left: 10px; transition: all 0.3s; font-size: 1.2rem; }
+.social-links a:hover { background: #e8ce8a; color: white; transform: translateY(-3px); }
+
+/* KARTA & HOSTS */
+.map-section { max-width: 1200px; margin: 60px auto; padding: 0 20px; }
+.section-title { text-align: center; color: #1a252f; font-size: 2.5rem; margin-bottom: 40px; }
+.map-wrapper { border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+.map-wrapper iframe { width: 100%; height: 450px; border: none; display: block; }
+
+.owners-section { background: #fff; padding: 60px 20px; }
+.owners-container { max-width: 1000px; margin: 0 auto; }
+.owners-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+.owner-card { background: #f8f9fa; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+.owner-card h3 { color: #e8ce8a; font-size: 1.8rem; margin-bottom: 10px; }
+.owner-card .role { font-weight: bold; color: #1a252f; margin-bottom: 15px; }
+.owner-card .desc { font-size: 0.95rem; color: #555; margin-bottom: 20px; }
+
+/* FOOTER */
+footer { text-align: center; padding: 30px 20px; background: #1a252f; color: white; }
